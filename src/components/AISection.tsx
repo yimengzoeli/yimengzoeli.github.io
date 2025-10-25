@@ -41,9 +41,11 @@ const AISection = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   Turning AI's potential into simple, practical steps that anyone can start.
                 </p>
-                <Button variant="link" className="p-0 h-auto font-semibold group hover:gap-2 transition-all">
-                  Get Starter Tutorial & Templates <ArrowRight className="ml-1 h-4 w-4" />
-                </Button>
+                <Button asChild variant="link" className="p-0 h-auto font-semibold group hover:gap-2 transition-all">
+                <a href="https://zoeliai.com/" target="_blank" rel="noopener noreferrer">
+                Get Starter Tutorial & Templates <ArrowRight className="ml-1 h-4 w-4" />
+                </a></Button>
+
               </div>
             </div>
           </div>
