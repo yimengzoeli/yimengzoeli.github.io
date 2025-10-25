@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 255 71% 68%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 255 71% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 255 71% 68%;
+
+    --radius: 1rem;
+
+    /* Gradient backgrounds for cards */
+    --gradient-mint: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    --gradient-rose: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    --gradient-teal: linear-gradient(135deg, #b2dfdb 0%, #80cbc4 100%);
+    --gradient-peach: linear-gradient(135deg, #ffe0b2 0%, #ffcc80 100%);
+    --gradient-lavender: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 100%);
+    --gradient-lime: linear-gradient(135deg, #f0f4c3 0%, #dce775 100%);
+    --gradient-photo: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 50%, #d1c4e9 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
